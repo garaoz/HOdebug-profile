@@ -4,11 +4,21 @@ Debug
 En esta carpeta hay cuatro archivos Aquí hay cuatro carpetas, cada una con sus ejercicios. Las respuestas a los ejercicios tienen que estar en esta carpeta, bajo el nombre respuestas.md.
 Varios bugs
 
-En la carpeta bugs/ hay varios bugs ya hechos y resueltos, pensado para hacerlo en clase. Aquí tenemos un Makefile donde, además, usamos una nueva variable: $CFLAGS. En esa variable pueden poner los distintos flags de compilación que quieran pasarle a $CC. Esta carpeta ya tiene un Makefile hecho, que compila todos los casos. Algunas cosas que pueden hacer es:
+1. En la carpeta bugs/ hay varios bugs ya hechos y resueltos, pensado para hacerlo en clase. Aquí tenemos un Makefile donde, además, usamos una nueva variable: $CFLAGS. En esa variable pueden poner los distintos flags de compilación que quieran pasarle a $CC. Esta carpeta ya tiene un Makefile hecho, que compila todos los casos. Algunas cosas que pueden hacer es:
 
-    Correr el programa con un debugger, sin agregar flags de debug. ¿Tienen toda la información que requerían?
-    ¿Qué pasa si ponen el flag de debug? ¿Qué flag de optimización es el mejor para debuggear?
-    Agreguen algún flag para que informe todos los warnings en la compilación, como -Wall. ¿Alguno les da alguna pista de por qué el programa se rompe?
+1.1 Correr el programa con un debugger, sin agregar flags de debug. ¿Tienen toda la información que requerían?. No le pasa ninguna informacion para el debugger. Se obtienen los siguientes resultados:
+	NoBugs = The addition is 6
+	Static = The addition is 6
+	Dynamic = The addition is 6
+	SegFault = SIGSEGV"Segmentation fault"
+	
+1.2 ¿Qué pasa si ponen el flag de debug? ¿Qué flag de optimización es el mejor para debuggear?
+
+
+
+
+
+1.3 Agreguen algún flag para que informe todos los warnings en la compilación, como -Wall. ¿Alguno les da alguna pista de por qué el programa se rompe?
 
 Floating point exception
 
